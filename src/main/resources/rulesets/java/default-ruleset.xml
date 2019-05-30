@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<ruleset name="Basic"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    <description>
+        基本的代码规则
+    </description>
+    <!--自定义规则-->
+    <rule ref="customize/codesize.xml"></rule>
+    <rule ref="customize/coupling.xml"></rule>
+    <rule ref="customize/design.xml"></rule>
+    <rule ref="customize/naming.xml"></rule>
+    <rule ref="customize/optimizations.xml"></rule>
+    <!--基本规则-->
+    <rule ref="rulesets/java/basic.xml"></rule>
+    <rule ref="rulesets/java/strings.xml"></rule>
+    <rule ref="rulesets/java/braces.xml"></rule>
+    <rule ref="rulesets/java/clone.xml"></rule>
+    <rule ref="rulesets/java/imports.xml"></rule>
+    <rule ref="rulesets/java/empty.xml"></rule>
+    <!--阿里p3c相关规则-->
+    <rule ref="rulesets/java/ali-oop.xml"/>
+    <rule ref="rulesets/java/ali-comment.xml"/>
+    <rule ref="rulesets/java/ali-concurrent.xml"/>
+    <rule ref="rulesets/java/ali-constant.xml"/>
+    <rule ref="rulesets/java/ali-exception.xml"/>
+    <rule ref="rulesets/java/ali-flowcontrol.xml"/>
+    <rule ref="rulesets/java/ali-naming.xml"/>
+    <rule ref="rulesets/java/ali-orm.xml"/>
+    <rule ref="rulesets/java/ali-other.xml"/>
+    <rule ref="rulesets/java/ali-set.xml"/>
+    <!--阿里p3c相关规则-->
+</ruleset>

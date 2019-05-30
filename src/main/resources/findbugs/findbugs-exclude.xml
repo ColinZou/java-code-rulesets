@@ -1,0 +1,38 @@
+<FindBugsFilter>
+    <Match>
+        <Bug pattern="EI_EXPOSE_REP"></Bug>
+    </Match>
+    <Match>
+        <Bug pattern="EI_EXPOSE_REP2"></Bug>
+    </Match>
+    <Match>
+        <Bug pattern="EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC"></Bug>
+    </Match>
+    <Match>
+        <Bug pattern="SE_BAD_FIELD"></Bug>
+    </Match>
+    <Match>
+        <Bug pattern="FCCD_FIND_CLASS_CIRCULAR_DEPENDENCY"></Bug>
+    </Match>
+    <Match>
+        <Bug pattern="USBR_UNNECESSARY_STORE_BEFORE_RETURN"></Bug>
+    </Match>
+    <Match>
+        <Bug pattern="EXS_EXCEPTION_SOFTENING_NO_CONSTRAINTS"></Bug>
+    </Match>
+    <Match>
+        <Bug pattern="CC_CYCLOMATIC_COMPLEXITY"/>
+    </Match>
+    <Match>
+        <Bug pattern="EXS_EXCEPTION_SOFTENING_HAS_CHECKED"/>
+    </Match>
+    <Match>
+        <Bug pattern="EXS_EXCEPTION_SOFTENING_NO_CHECKED"/>
+    </Match>
+    <Match>
+        <Bug pattern="USFW_UNSYNCHRONIZED_SINGLETON_FIELD_WRITES"/>
+    </Match>
+    <Match>
+        <Bug pattern="JPAI_UNNECESSARY_TRANSACTION_EXCEPTION_HANDLING"/>
+    </Match>
+</FindBugsFilter>
