@@ -10,12 +10,12 @@
     <repository>
         <id>oss.sonatype.org</id>
         <name>SonaType OSS</name>
-        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        <url>https://oss.sonatype.org/content/groups/public</url>
         <snapshots>
-            <enabled>true</enabled>
+            <enabled>false</enabled>
         </snapshots>
         <releases>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
         </releases>
     </repository>
 </repositories>
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.stableforever</groupId>
             <artifactId>java-code-rulesets</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.1</version>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>com.stableforever</groupId>
             <artifactId>java-code-rulesets</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.1</version>
         </dependency>
     </dependencies>
     <configuration>
