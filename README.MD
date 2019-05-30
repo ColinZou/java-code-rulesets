@@ -9,7 +9,7 @@
 <repositories>
     <repository>
         <id>oss.sonatype.org</id>
-        <name>Sona Type OSS</name>
+        <name>SonaType OSS</name>
         <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         <snapshots>
             <enabled>true</enabled>
@@ -21,6 +21,9 @@
 </repositories>
 ```
 ### 2. PMD配置
+
+**注意：**pmd.version=5.5.2。由于p3c-pmd的版本问题，将不能使用最新版本的pmd。
+
 ```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
@@ -31,6 +34,21 @@
             <groupId>com.stableforever</groupId>
             <artifactId>java-code-rulesets</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.pmd</groupId>
+            <artifactId>pmd-core</artifactId>
+            <version>${pmd.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.pmd</groupId>
+            <artifactId>pmd-java</artifactId>
+            <version>${pmd.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.p3c</groupId>
+            <artifactId>p3c-pmd</artifactId>
+            <version>1.3.6</version>
         </dependency>
     </dependencies>
     <configuration>
